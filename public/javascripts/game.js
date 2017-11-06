@@ -10,7 +10,7 @@ class Game{
             player4: new Player
         }
         this.dispenseTiles(this.deck, this.players)
-        // this.turn = this.startGame(this.players)
+        this.turn = this.startGame(this.players)
     }
 
     createDeck(){
@@ -51,7 +51,7 @@ class Game{
             for(let j=0; j<players['player'+i].hand.length; j++){
                 if(players['player'+i].hand[j][0] == 0 && players['player'+i].hand[j][1] == 0){
                     player = Object.keys(players)
-                    console.log(player)
+                    // console.log(player)
                     players['player'+i].hand.splice(j, 1)
                     return (i == 0) ? player[0] : player[i-1]
                 }
