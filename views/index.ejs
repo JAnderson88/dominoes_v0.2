@@ -21,12 +21,10 @@
   <script src="javascripts/tileDisplay.js"></script>
   <script src="javascripts/boardHandler.js"></script>
   <script>
-    let game = new Game(board, 6)
+    let game = new Game(board, 6, boardDim, 1, [0,0])
     let identifier = game.players.player1
-    let tile = [0,0]
     tileDisplay(game.players.player1.hand, deck)
-    drawHolder(boardCoord, board, "long", tile)
-    // placeImage(document.querySelector("[]"))
+    drawHolder(game.coords, board, "long", game.tile)
   </script>
   
 </body>

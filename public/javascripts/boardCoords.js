@@ -15,11 +15,11 @@ class BoardCoords{
         }
     }
 
-    setBoardDim(boardDim){
-        this.boardDim = boardDim
+    setBoardDim(coords){
+        this.coords = coords
     }
 
-    getBoardDim(){
-        return this.boardDim
+    getBoardDim(coords){
+        return this.coords
     }
 }
